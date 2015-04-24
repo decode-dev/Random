@@ -3,5 +3,5 @@ You can use any of the data present in this in Repo as you wish
 You can give credits if you think it is needed.
 Will be updating this file when needed.
 
-Added some notes which I learned during the Project Development. (Hope it helps !!)
+Added some notes which I learned during the Project Development of "CaaS - Auditing Cloud Consistency". (Hope it helps !!)
 #Peace 
