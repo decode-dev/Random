@@ -1,0 +1,84 @@
+Windows - GUI;User Friendly;Easy to make;
+Forms - 
+
+	Graphical Component;
+	"Container for Controls";
+	Automatically creates Form1;
+	C# Recognizes the form as a Class.
+
+
+Rules for Form Def:
+	Sub class of "System.Windows.Forms.Form" - Defined as Public Class
+	Shud be defined as "partial" class since the def is written in 2 files (Form1.Designer.cs;Form1.cs)
+	Contains a Constructor called as "IntializeComponent()"- Code for crearting necessary Controls
+	Syntax:
+		namespace <Project Name>
+		{
+			public partial class <FormName>:Form
+				public <FormName>()
+				{
+					InitializeComponent();
+				}
+		}
+Event Handling:
+	Run time Action-Performed by the User
+	Ex:Button_click;Textbox_Change
+	Syntax:
+		private void controlname_eventname(Object Sender,Event Args e)
+		{
+
+		}
+
+
+Sample Program:
+
+	Form1_Click(object Sender,EventArgs e)
+	{
+		MessageBox.Show("This is Form Click Event...")
+	}
+
+Changing Startup Form:
+
+	Application.Run(new Form1());
+	
+Invoke Forms @ Runtym:
+	FormName Obj = new FormName;
+		obj.Show();
+
+ASP.NET
+	Core Controls/Standard Controls
+	Data Controls
+	Validation Controls
+	Navigation Controls
+	Login Controls
+	AJAX Extensions 
+	Reporting Controls
+
+ADO.NET
+	Query Processing:
+	Connection (provider,data source,user id,password) --> Command (sqlstr) --> Data Reader
+	Connection : Maintains the connection with DB
+	Command : Send & Execute SQL Statements.
+	Data Reader : Reads the Data.
+		
+Example: (Query Processing)
+	string con_str = "Data Source = <name of the server>;Initial Catalog = <DB Name>;User Id = <user name>;password = <password>";
+	SqlConnection con=new SqlConnection(con_str);
+	string sqlstr = "select * form tablename";
+	SqlCommand cmd = new SqlCommand (sqlstr,con);
+	SqlDataReader dr;
+	con.Open();
+	dr=cmd.ExecuteReader();
+	dr.Read();
+	dr.GetValue(column index);
+	dr.Close();
+	con.Close();
+
+Example: (Non-Query Processing)
+	string con_str = "Data Source = <name of the server>;Initial Catalog = <DB Name>;User Id = <user name>;password = <password>";
+	SqlConnection con=new SqlConnection(con_str);
+	string sqlstr = "insert/delete/update/create table/drop table/alter table";
+	SqlCommand cmd = new SqlCommand(sqlstr,con);
+	cn.Open();
+	int n = cmd.ExecuteNonQuery();
+	cn.Close();
