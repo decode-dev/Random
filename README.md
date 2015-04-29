@@ -9,5 +9,4 @@ Will be updating this file when needed.
 Added few slides and some written woek on "RE".
 Will be adding some Programs also which I have made/cracked along the with the detail "Instructions" and also comments (Were there req.)
 
-Added some notes which I learned during the Project Development of "CaaS - Auditing Cloud Consistency". (Hope it helps !!)
 #Peace 
