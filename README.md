@@ -6,7 +6,7 @@ Will be updating this file when needed.
 
 
 # Reverse Engineering
-Added few slides and some written woek on "RE".
+Added few slides and some written work on "RE".
 Will be adding some Programs also which I have made/cracked along the with the detail "Instructions" and also comments (Were there req.)
 
 #Peace 
